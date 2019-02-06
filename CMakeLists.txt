@@ -43,7 +43,7 @@ set(CMAKE_CXX_OUTPUT_EXTENSION_REPLACE 1)
 project(shifts_creator)
 
 set(SRC_LIST
-src/employee.cpp
+src/Employee.cpp
 )
 
 include_directories(src)
@@ -58,6 +58,7 @@ endif (UNIX)
 
 set(TEST_SRC_LIST
 test/test_main.cpp
+test/EmployeeTests.cpp
 )
 
 link_libraries(gtest)
