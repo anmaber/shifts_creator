@@ -25,4 +25,4 @@ script:
   - cd Build
   - cmake ..
   - make
-- ./shifts_creator-ut
+  - ./shifts_creator-ut
