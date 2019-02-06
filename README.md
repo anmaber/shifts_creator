@@ -1,4 +1,5 @@
 # shifts_creator
+[![Build Status](https://travis-ci.com/anmaber/shifts_creator.svg?branch=master)]
 **Educational project.**
 Main goal is to implement an application that can create working schedule in restaurant based on employee's availability. In basic version databases will be .csv files and an application will be console application. First extention is to create user interface using Qt. After that, aim is to stop using .csv files, create databases and use QtSql.
 ### Assumptions: 
