@@ -44,6 +44,7 @@ project(shifts_creator)
 
 set(SRC_LIST
 src/Employee.cpp
+src/EmployeeDatabase.cpp
 )
 
 include_directories(src)
