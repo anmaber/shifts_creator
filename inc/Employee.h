@@ -13,7 +13,16 @@ class Employee
     bool _manager;
 
 public:
-    Employee(int id,std::string name, std::string surname,
-             bool cashier,bool service, bool cook, bool sink,bool manager);
+    Employee(int id, std::string name, std::string surname,
+             bool cashier, bool service, bool cook, bool sink, bool manager);
+
+    Employee()= delete;
+    Employee(const Employee &) = delete;
+    Employee(Employee &&) = delete;
+
+    ~Employee() = default;
+
+    Employee & operator=(const Employee &) = delete;
+    Employee & operator=(Employee &&) = delete;
 
 };
