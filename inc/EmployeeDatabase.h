@@ -7,7 +7,10 @@
 class EmployeeDatabase
 {
     std::vector<std::shared_ptr<Employee>> _employeeDatabase;
+
 public:
+
+    EmployeeDatabase();
 
 };
 
