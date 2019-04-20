@@ -22,7 +22,6 @@ Main goal is to implement an application that can create working schedule in res
 - service - 1,2,4
 - cook - 1,2,4
 - shift manager - 1,4
-- sink 19:00-23:00
 
 **Number of administrators:** 1
 

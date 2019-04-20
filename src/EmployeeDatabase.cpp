@@ -1,4 +1,4 @@
-#include "../inc/EmployeeDatabase.h"
+#include "EmployeeDatabase.hpp"
 
 #include <fstream>
 #include <sstream>
@@ -9,7 +9,7 @@ EmployeeDatabase::EmployeeDatabase()
     std::ifstream data("../files/EmployeeDatabase.csv");
     std::string s_id, name, surname, s_cashier, s_service, s_cook, s_sink, s_manager;
     int id;
-    bool cashier,service, cook, sink, manager;
+    bool cashier,service, cook, manager;
 
     while (!data.eof()) {
         std::getline(data, s_id, ',');
@@ -24,10 +24,9 @@ EmployeeDatabase::EmployeeDatabase()
         cashier = (s_cashier=="1");
         service = (s_service=="1");
         cook = (s_cook=="1");
-        sink = (s_sink=="1");
         manager = (s_manager=="1");
         _employeeDatabase.push_back(
-                    std::make_shared<Employee>(id,name,surname,cashier,service,cook,sink,manager));
+                    std::make_shared<Employee>(id,name,surname,cashier,service,cook,manager));
 
        }
     data.close();

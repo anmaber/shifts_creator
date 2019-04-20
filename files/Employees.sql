@@ -1,0 +1,25 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE Employees (id integer primary key, name text, surname text, cashier boolean, service boolean, cook boolean, sink boolean, manager boolean);
+INSERT INTO "Employees" VALUES(1,'Anna','Nowak',1,0,0,0,0);
+INSERT INTO "Employees" VALUES(2,'Aleksandra','Kubisz',1,0,0,0,0);
+INSERT INTO "Employees" VALUES(3,'Marzena','Czesak',1,1,0,0,0);
+INSERT INTO "Employees" VALUES(4,'Patrycja','Arasim',1,1,1,1,1);
+INSERT INTO "Employees" VALUES(5,'Marcin','Bogusz',0,0,1,1,0);
+INSERT INTO "Employees" VALUES(6,'Michał','Pajek',1,0,1,1,0);
+INSERT INTO "Employees" VALUES(7,'Mateusz','Fiflak',1,1,1,1,0);
+INSERT INTO "Employees" VALUES(8,'Karol','Dombek',0,0,1,1,0);
+INSERT INTO "Employees" VALUES(9,'Amelia','Rutkowska',1,1,0,0,0);
+INSERT INTO "Employees" VALUES(10,'Maria','Szczota',0,1,0,0,0);
+INSERT INTO "Employees" VALUES(11,'Wiktoria','Gajewska',1,0,0,0,0);
+INSERT INTO "Employees" VALUES(12,'Mateusz','Tomczak',1,1,1,1,1);
+INSERT INTO "Employees" VALUES(13,'Antoni','Czajkowski',1,1,0,0,0);
+INSERT INTO "Employees" VALUES(14,'Wiktor','Andrzejewski',1,1,1,1,1);
+INSERT INTO "Employees" VALUES(15,'Maciej','Chrzanowski',0,0,1,1,0);
+INSERT INTO "Employees" VALUES(16,'Nikola','Lewandoska',1,1,0,0,0);
+INSERT INTO "Employees" VALUES(17,'Julia','Kopacz',1,1,0,0,0);
+INSERT INTO "Employees" VALUES(18,'Jan','Morawski',1,1,1,1,1);
+INSERT INTO "Employees" VALUES(19,'Maksymillian','Gajda',1,1,1,1,1);
+INSERT INTO "Employees" VALUES(20,'Katarzyna','Kasprzyk',1,1,0,0,0);
+COMMIT;
+
